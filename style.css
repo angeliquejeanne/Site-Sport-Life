@@ -356,8 +356,24 @@ h1 {
 }
 }
 
-
-
+/* Section equipment & modal */
+.title-equipment {
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+#equipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+}
 
 /* footer */
 footer {
