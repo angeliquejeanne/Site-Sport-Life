@@ -71,7 +71,6 @@ nav a:hover {
     display: flex;
     overflow: hidden;
 }
-
 .bloc-left-home {
     position: relative;
     width: 40%;
@@ -96,7 +95,6 @@ h1 {
     margin-left: 8vw;
     line-height: 1.3;
 }
-
 .cont-btn-home {
     display: flex;
 }
@@ -215,8 +213,61 @@ h1 {
     position: relative;
     z-index: 1;
 }
-
-
+.card-info {
+    width: 350px;
+    height: auto;
+    margin: 0 20px 80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 100;
+    background-color: snow;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.container-img-info img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 100;
+}
+.card-info h2 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 5px;
+    background-color: snow;
+}
+.card-info p {
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding: 0 5px 15px;
+    background-color: snow;
+}
+.deco-infos {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    left: -100px;
+}
+.deco-infos-2 {
+    position: absolute;
+    z-index: -1;
+    bottom: -70px;
+    left: -100px;
+}
+.deco-infos-3 {
+    position: absolute;
+    z-index: -1;
+    bottom: -70px;
+    right: -100px;
+}
+.deco-infos-4 {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    right: -100px;
+}
 
 
 footer {
