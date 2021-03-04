@@ -636,7 +636,17 @@ h1 {
     margin: 20px 10px;
     border-radius: 5px;
 }
-
+.card-price h3 {
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0;
+    position: relative;
+}
+.price-card {
+    text-align: center;
+    font-size: 30px;
+    margin: 25px 0;
+}
 
 
 
