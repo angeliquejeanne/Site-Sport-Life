@@ -54,7 +54,7 @@ nav a:hover {
     transition: 0.2s;
 
 }
-/* Responsive de la navbar */
+/* Responsive navbar */
 @media screen and (max-width: 550px) {
     nav li {
         margin: 0 8px;
@@ -65,7 +65,7 @@ nav a:hover {
     
 }
 
-/*  */
+/* section home / presentation */
 .home {
     height: 100vh;
     display: flex;
@@ -136,7 +136,15 @@ h1 {
     height: 100%;
     background-position: 70% 10%;
 }
-
+/* Responsive section Home*/
+@media screen and (max-width: 1350px) {
+    .bloc-left-home {
+        width: 60%;
+    }
+    .bloc-right-home {
+        background-position: 72% 10%;
+    }
+}
 
 
 
