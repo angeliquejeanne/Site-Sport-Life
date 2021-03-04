@@ -617,6 +617,29 @@ h1 {
     text-align: center;
     padding: 50px 0;
 }
+#prices {
+    background: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+}
+.card-price {
+    width: 350px;
+    height: auto;
+    background-image: repeating-linear-gradient(22.5deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px,transparent 1px, transparent 31px,rgba(255,255,255,0.05) 31px, rgba(255,255,255,0.05) 32px,transparent 32px, transparent 92px),repeating-linear-gradient(112.5deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px,transparent 1px, transparent 31px,rgba(255,255,255,0.05) 31px, rgba(255,255,255,0.05) 32px,transparent 32px, transparent 92px),repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px,transparent 1px, transparent 31px,rgba(255,255,255,0.05) 31px, rgba(255,255,255,0.05) 32px,transparent 32px, transparent 92px),linear-gradient(90deg, hsl(279,0%,3%),hsl(279,0%,3%));
+    color: snow;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+
+
+
 
 /* footer */
 footer {
