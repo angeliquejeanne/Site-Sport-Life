@@ -291,7 +291,6 @@ h1 {
     }
 }
 
-
 /* section choice */
 #choice {
     display: flex;
@@ -331,7 +330,31 @@ h1 {
     color: black;
 }
 
-
+/* Responsive section choice */
+@media screen and (max-width: 1200px) {
+    .training-choice {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 775px) {
+#choice {
+    flex-direction: column;
+}
+.training-choice h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.btn-outline-choice {
+    width: 250px;
+}
+.training-choice{
+    width: 350px;
+    margin: 50px 0px 70px;
+}
+.training-choice:nth-child(1){
+    margin: 50px 20px 0px;
+}
+}
 
 
 
