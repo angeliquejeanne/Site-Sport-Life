@@ -1,3 +1,4 @@
+/* general style to the site */
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +13,7 @@ body {
     background: snow;
 }
 
-
+/* Navbar style */
 nav {
     position: fixed;
     z-index: 1000;
@@ -53,7 +54,16 @@ nav a:hover {
     transition: 0.2s;
 
 }
-
+/* Responsive de la navbar */
+@media screen and (max-width: 550px) {
+    nav li {
+        margin: 0 8px;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    
+}
 
 
 
