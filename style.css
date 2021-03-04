@@ -604,7 +604,11 @@ h1 {
 }
 
 /* Responsive section parallax */
-
+@media screen and (max-width: 550px){
+    .parallax-txt {
+        font-size: 50px;
+    }
+}
 
 
 
