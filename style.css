@@ -53,3 +53,15 @@ nav a:hover {
     transition: 0.2s;
 
 }
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px dashed black;
+}
