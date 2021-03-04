@@ -610,7 +610,13 @@ h1 {
     }
 }
 
-
+/* Section prices */
+.title-prices {
+    background: snow;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
 
 /* footer */
 footer {
