@@ -647,6 +647,23 @@ h1 {
     font-size: 30px;
     margin: 25px 0;
 }
+.price-card span {
+    font-size: 80px;
+    position: relative;
+}
+.price-card span::after {
+    content: "€";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    font-size: 25px;
+}
+
+
+
+
+
 
 
 
