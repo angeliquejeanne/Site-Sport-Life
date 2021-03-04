@@ -126,7 +126,16 @@ h1 {
 .b2 {
     margin-left: 10px;
 }
-
+.bloc-right-home {
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/13/16/00/box-1514845_960_720.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 100%;
+    background-position: 70% 10%;
+}
 
 
 
