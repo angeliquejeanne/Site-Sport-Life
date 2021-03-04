@@ -1,0 +1,599 @@
+/* general style to the site */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: snow;
+}
+
+/* Navbar style */
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out,
+                border-bottom 0.3s ease-in-out;
+
+}
+nav.anim-nav {
+    background: black;
+    border-bottom: 3px solid snow;
+    color: snow;
+}
+nav ul {
+    width: 100%; 
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: snow;
+    text-transform: uppercase;
+    border-top: 2px solid transparent;
+    transition: .2s;
+}
+nav a:hover {
+    color: snow;
+    border-left: red 2px solid ;
+    transition: 0.2s;
+
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 550px) {
+    nav li {
+        margin: 0 8px;
+    }
+    nav a {
+        font-size: 15px;
+    } 
+}
+
+/* section home */
+.home {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.bloc-left-home {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    box-shadow: 90px 0 100px 100px black;    
+}
+h1 {
+    color: snow;
+    font-size: 90px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-left: 8vw;
+    white-space: nowrap;
+}
+.home p {
+    
+    color: snow;
+    font-size: 30px;
+    text-align: justify;
+    width: 600px;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+.cont-btn-home {
+    display: flex;
+}
+.btn-home {
+    font-size: 18px;
+    text-align: center;
+    color:  snow;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 40px;
+    border: 3px solid snow;
+    width: 150px;
+    cursor: pointer;
+  
+}
+.btn-home:hover {
+    transition: all 0.2s ease;
+    color: black;
+    background: snow;
+}
+.b1 {
+    margin-left: 8vw;
+}
+.b2 {
+    margin-left: 10px;
+}
+.bloc-right-home {
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/13/16/00/box-1514845_960_720.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 100%;
+    background-position: 70% 10%;
+}
+
+/* Responsive section Home*/
+@media screen and (max-width: 1350px) {
+    .bloc-left-home {
+        width: 60%;
+    }
+    .bloc-right-home {
+        background-position: 72% 10%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .home {
+        height: 600px;
+    }
+    h1 {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+    .home p {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .btn-home {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+    .bloc-left-home {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px) {
+
+    .home {
+        height: 450px;
+    }
+    h1 {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+    .home p {
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+    .btn-home {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .b1 {
+        margin-left: 2vw;
+    }
+    .b2 {
+        margin-left: 10px;
+    }
+    .bloc-left-home {
+        box-shadow: 20px 0 100px 100px black;
+        width: 40%;
+    }
+
+}
+
+/* Section info */
+.title-section-info {
+    color: black;
+    text-align: center;
+    font-size: 65px;
+    padding: 50px 20px 120px;
+}
+.section-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background: snow;
+    position: relative;
+    z-index: 1;
+}
+.card-info {
+    width: 350px;
+    height: auto;
+    margin: 0 20px 80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 100;
+    background-color: snow;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.container-img-info img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 100;
+}
+.card-info h2 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 5px;
+    background-color: snow;
+}
+.card-info p {
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding: 0 5px 15px;
+    background-color: snow;
+}
+.deco-infos {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    left: -100px;
+}
+.deco-infos-2 {
+    position: absolute;
+    z-index: -1;
+    bottom: -70px;
+    left: -100px;
+}
+.deco-infos-3 {
+    position: absolute;
+    z-index: -1;
+    bottom: -70px;
+    right: -100px;
+}
+.deco-infos-4 {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    right: -100px;
+}
+
+/* Responsive section info */
+@media screen and (max-width: 1400px) {
+    .deco-infos, .deco-infos-2, .deco-infos-3, .deco-infos-4 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .title-section-info {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .title-section-info {
+        font-size: 32px;
+        padding: 40px 20px 40px;
+    }
+    .card-info {
+        margin: 0 10px 45px;
+    }
+}
+
+/* section choice */
+#choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.training-choice {
+    width: 30%;
+    text-align: center;
+    color: snow;
+    margin: 50px 20px 70px;
+}
+.training-choice h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.training-choice p {
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+.btn-price {
+    display: inline-block;
+    width: 300px;
+    padding: 15px 0;
+    font-size: 22px;
+    background: black;
+    color: snow;
+    border: 3px solid snow;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-price:hover {
+    transition: all 0.2s ease-in-out;
+    background: snow;
+    color: black;
+}
+
+/* Responsive section choice */
+@media screen and (max-width: 1200px) {
+    .training-choice {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 775px) {
+#choice {
+    flex-direction: column;
+}
+.training-choice h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.btn-outline-choice {
+    width: 250px;
+}
+.training-choice{
+    width: 350px;
+    margin: 50px 0px 70px;
+}
+.training-choice:nth-child(1){
+    margin: 50px 20px 0px;
+}
+}
+
+/* Section equipment & modal */
+.title-equipment {
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+#equipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+}
+.btnModal {
+    width: 350px;
+    height: 400px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.btnModal:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btnModal:focus,
+.btnModal:active {
+  outline: 0;
+}
+.btnModal:nth-child(1) {
+  background-image: url(./src/bodyBuilding.jpg);
+}
+.btnModal:nth-child(2) {
+  background-image: url(./src/coreTraining.jpg);
+}
+.btnModal:nth-child(3) {
+  background-image: url(./src/cycling.jpg);
+}
+.btnModal:nth-child(4) {
+  background-image: url(./src/fitnessWoman.jpg);
+}
+.btnModal:nth-child(5) {
+  background-image: url(./src/gym.jpg);
+}
+.btnModal:nth-child(6) {
+  background-image: url(./src/lifting-weights.jpg);
+}
+.btnModal:nth-child(7) {
+  background-image: url(./src/woman-plank.jpg);
+}
+.btnModal:nth-child(8) {
+  background-image: url(./src/gym-room.jpg);
+}
+.btnModal:nth-child(9) {
+  background-image: url(./src/workout.jpg);
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 7vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.88);
+  -webkit-animation-duration: 0.35s;
+          animation-duration: 0.35s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;   
+}
+.modal__dialog {
+  position: relative;
+  max-width: 750px;
+  max-height: 850px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+}
+.modal__close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  border: 2px solid black;
+  border-radius: 50%;
+  width:20px;
+  height:20px;
+  color: black;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+}
+.modal__close:hover {
+  color: red;
+  border: 2px solid red;
+}
+.modal__close:focus {
+  outline: 0;
+}
+.modal__header {
+  border-bottom: 1px solid #e2e2e2;
+}
+.modal__content {
+  padding: 10px 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+.modal__content img {
+  max-width: 700px;
+  max-height: 800px;
+}
+.modal__dialog p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: snow;
+}
+.modal__footer {
+  padding-top: 20px;
+  border-top: 1px solid #e2e2e2;
+  text-align: right;
+}
+.modal__footer .demo__btn {
+    background-color: black;
+    border: 3px solid snow;
+    color: snow;
+    cursor: pointer;
+    padding: 5px;
+}
+.modal__footer .demo__btn:hover{
+  background-color: snow;
+  border: 3px solid black;
+  color: black;
+}
+.modal.is-modal-active {
+  display: flex;
+}
+
+/* Animation */
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Responsive section equipment & modal */
+@media screen and (max-width: 425px) {
+    .title-equipment {
+        font-size: 40px;
+    }
+    .modal {
+        width: 100%;
+    }
+    .modal__dialog {
+        width: 300px;
+        padding: 15px;
+    }
+    .modal__content img {
+        width: 270px;
+    }
+}  
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 100%;
+    }
+    .modal__dialog {
+        width: 425px;
+        padding: 12.5px;
+    }
+    .modal__content img {
+        width: 400px;
+    }
+}  
+@media screen and (max-width: 800px) {
+    .modal {
+        width: 100%;
+    }
+    .modal__dialog {
+        width: 590px;
+        padding: 15px;
+        margin-top: 45px;
+    }
+    .modal__content img {
+        width: 560px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .modal {
+        width: 100%;
+    }
+    .modal__dialog {
+        max-width: 750px;
+        max-height: 850px;
+        padding: 20px;
+        margin: auto;
+    }
+    .modal__content img {
+        max-width: 700px;
+        max-height: 800px;
+    }
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px dashed black;
+}
