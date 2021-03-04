@@ -673,12 +673,32 @@ h1 {
     width: 20px;
 }
 
+/* section contact */
+.title-contact {
+    border-top: 1px dashed black;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+}
 
+.form-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 
+/* Responsive section contact */
+@media screen and (max-width: 1100px){
+    #contact {
+        width: 80%;
+        display: inline;
+    }
 
-
-
-
+}
 
 /* footer */
 footer {
