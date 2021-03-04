@@ -145,7 +145,58 @@ h1 {
         background-position: 72% 10%;
     }
 }
+@media screen and (max-width: 750px) {
+    .home {
+        height: 600px;
+    }
+    h1 {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+    .home p {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .btn-home {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+    .bloc-left-home {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px) {
 
+    .home {
+        height: 450px;
+    }
+    h1 {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+    .home p {
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+    .btn-home {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .b1 {
+        margin-left: 2vw;
+    }
+    .b2 {
+        margin-left: 10px;
+    }
+    .bloc-left-home {
+        box-shadow: 20px 0 100px 100px black;
+        width: 40%;
+    }
+
+}
 
 
 footer {
